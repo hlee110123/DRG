@@ -4,7 +4,7 @@ This R package provides tools for analyzing healthcare utilization in OMOP CDM d
 
 Analysis of Healthcare Data (2016–2024):
 
-1. Prevalence Rates of Disease-Related Groups (DRG) (2016–2024)
+# 1. Prevalence Rates of Disease-Related Groups (DRG) (2016–2024)
 2. Prescription Rates of Anatomical Therapeutic Chemical (ATC) Classifications (2016–2024)
 3. Number of Individuals Across Domains (2016–2024)
 4. Number of Occurrence Records Across Domains (2016–2024)
@@ -17,16 +17,15 @@ Analysis of Healthcare Data (2016–2024):
 11. Prevalence of Comorbidity-Indicating Codes
 12. Severity Scores (Elixhauser Comorbidity Index or Charlson Comorbidity Index)
     
-# Installation: dbprofile package from GITHUB 
+# Installation: DRG package from GITHUB 
 
 ```r
-remotes::install_github("hlee110123/dbprofile")
+remotes::install_github("hlee110123/DRG")
 ```
 # How to run
 
 ```r
 #install packages 
-install.packages("dbprofile")
 install.packages("DBI")
 install.packages("DatabaseConnector")
 install.packages("rJava")
@@ -72,4 +71,5 @@ write.csv(prevalence_rates, "disease_prevalence_2016_2024.csv", row.names = FALS
 
 ## Notes
 Once you've completed the analysis, please export the results to "disease_prevalence_2016_2024.csv" and kindly share it as an email attachment. Thank you! 
+
 Email address: "hlee292@jh.edu"
