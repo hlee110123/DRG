@@ -94,6 +94,7 @@ get_prevalence_rates <- function(conn, cdm_schema) {
   results <- lapply(names(DISEASE_CATEGORIES), function(category) {
     count <- get_category_count(conn, cdm_schema, category)
     prevalence <- (count / total_patients) * 100
+    prevalence_per_100k <- (count / total_patients) * 100000
 
     data.frame(
       category = category,
@@ -103,6 +104,7 @@ get_prevalence_rates <- function(conn, cdm_schema) {
       patient_count = count,
       total_patients = total_patients,
       prevalence_rate = prevalence,
+      prevalence_per_100k = prevalence_per_100k,
       date_range = "2016-01-01 to 2024-12-31",
       stringsAsFactors = FALSE
     )
