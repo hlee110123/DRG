@@ -16,7 +16,11 @@ Analysis of Healthcare Data (2016–2024):
 10. Ratio of Intensive Interventions
 11. Prevalence of Comorbidity-Indicating Codes
 12. Severity Scores (Elixhauser Comorbidity Index or Charlson Comorbidity Index)
-13. Primary payer types (Medicare, Medicaid, Private, Self-pay, Other) 
+13. Primary payer types (Medicare, Medicaid, Private, Self-pay, Other)
+14. Hospital region (Northeast, North central/Midwest, South, West)
+15. Hospital type (Government, non-federal, prviate, non-profit, private, for-profit)
+16. Bed-size category (small, medium, large)
+17. Teaching hospital : (Urban nonteaching or rural or urban teaching)
 
 # Installation: DRG package from GITHUB 
 
